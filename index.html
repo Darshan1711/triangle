@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Triagle of Area Calculator</h1>
+        <p>Enter the base of triangle :
+            <input type="text" id="base">
+            <p>Enter the height of triangle :
+                <input type="text" id="height"><br><br>
+                <button onclick="test()">Calculate Area</button>
+                <p id="p1"></p>
+                <script>
+                    function test()
+                    {
+                        console.log("in")
+                        let darshan = parseInt(document.getElementById("base").value);
+                        let darsh = parseInt(document.getElementById("height").value);
+                        let areavalue = (darshan * darsh) / 2;
+
+                    document.getElementById("p1").innerHTML = areavalue;
+
+                }
+
+                </script>
+
+            </body>
+        </html>
